@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Group-Id: com.ctl.ci
+Short-Name: ContinuousDelivery
+Long-Name: ContinuousDelivery
+Plugin-Version: 0.0.1-SNAPSHOT (private-09/27/2018 14:51-AB40286)
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Dependencies: mailer:1.18
+Plugin-Developers: Bharath Ashok:Bharath:Bharath.Ashok@centurylink.com
+Libraries: C:\Bharath_Workspaces\Jenkins_Plugin\workspaces\ContinuousD
+ elivery _back_27092018\src\main\resources,C:\Bharath_Workspaces\Jenki
+ ns_Plugin\workspaces\ContinuousDelivery _back_27092018\target\classes
+ ,C:\Bharath_Softwares\maven\maven_repo\com\fasterxml\jackson\core\jac
+ kson-annotations\2.6.0\jackson-annotations-2.6.0.jar,C:\Bharath_Softw
+ ares\maven\maven_repo\org\apache\httpcomponents\httpclient\4.5.3\http
+ client-4.5.3.jar,C:\Bharath_Softwares\maven\maven_repo\com\oracle\ojd
+ bc6\11.2.0.3\ojdbc6-11.2.0.3.jar,C:\Bharath_Softwares\maven\maven_rep
+ o\org\json\json\20160810\json-20160810.jar,C:\Bharath_Softwares\maven
+ \maven_repo\com\fasterxml\jackson\core\jackson-core\2.6.3\jackson-cor
+ e-2.6.3.jar,C:\Bharath_Softwares\maven\maven_repo\com\fasterxml\jacks
+ on\core\jackson-databind\2.6.3\jackson-databind-2.6.3.jar,C:\Bharath_
+ Softwares\maven\maven_repo\org\apache\httpcomponents\httpcore\4.4.6\h
+ ttpcore-4.4.6.jar,C:\Bharath_Softwares\maven\maven_repo\com\microsoft
+ \sqlserver\sqljdbc4\4.0\sqljdbc4-4.0.jar,C:\Bharath_Softwares\maven\m
+ aven_repo\commons-codec\commons-codec\1.9\commons-codec-1.9.jar,C:\Bh
+ arath_Softwares\maven\maven_repo\commons-lang\commons-lang\2.1\common
+ s-lang-2.1.jar
+Resource-Path: C:\Bharath_Workspaces\Jenkins_Plugin\workspaces\Continu
+ ousDelivery _back_27092018\src\main\webapp
+

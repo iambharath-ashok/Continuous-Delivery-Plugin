@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>2.11</version>
+	</parent>
+
+	<groupId>com.ctl.ci</groupId>
+	<artifactId>ContinuousDelivery</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>hpi</packaging>
+
+	<repositories>
+		<repository>
+			<id>m.g.o-public</id>
+			<url>http://maven.glassfish.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>m.g.o-public</id>
+			<url>http://maven.glassfish.org/content/groups/public/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<target>1.8</target>
+					<source>1.8</source>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<additionalparam>-Xdoclint:none</additionalparam>
+					<failOnError>false</failOnError>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>animal-sniffer-maven-plugin</artifactId>
+				<!-- <version>1.16</version> -->
+				<configuration>
+					<signature>
+						<groupId>org.codehaus.mojo.signature</groupId>
+						<artifactId>java18</artifactId>
+						<version>1.0</version>
+					</signature>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jenkins-ci.plugins</groupId>
+			<artifactId>mailer</artifactId>
+			<version>1.18</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.1</version>
+		</dependency>
+	</dependencies>
+	<developers>
+		<developer>
+			<id>Bharath</id>
+			<name>Bharath Ashok</name>
+			<email>Bharath.Ashok@centurylink.com</email>
+			<organization>Centurylink</organization>
+			<roles>
+				<role>Senior Developer</role>
+			</roles>
+		</developer>
+	</developers>
+</project>

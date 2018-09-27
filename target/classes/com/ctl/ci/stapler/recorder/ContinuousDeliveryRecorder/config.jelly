@@ -1,0 +1,82 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"
+ xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" 
+ xmlns:t="/lib/hudson" xmlns:f="/lib/form"  xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+ <f:entry title="">
+   <f:repeatable field="continuousDeliveryOptionsList">
+   	<table width="100%">
+	    <f:section title="">
+	        <f:section title="Delivery Options">
+	            <f:entry >
+	                <table width="100%">
+	                    <f:entry title="Application" field="applications">
+				         <f:select />
+				        </f:entry>
+				        <f:entry title="Environment" field="environments">
+				          <f:select />
+				        </f:entry>
+				        <f:entry title="Request Type" field="requestType">
+				          <f:select />
+				        </f:entry>
+				         <f:entry title="Mailing List" field="mailingList">
+			    		  <f:textbox />
+			 			</f:entry>
+	                </table>
+	            </f:entry>
+	        </f:section>
+	        <f:section title="Dimension Options">
+	            <f:entry >
+	                <table width="100%">
+	                     <f:entry title="Dimensions Database" field="dimensionDatabases">
+				          <f:select />
+				        </f:entry>
+				         <f:entry title="Dimensions Product" field="dimensionProducts">
+				          <f:select />
+				        </f:entry>
+				         <f:entry title="Dimensions Workset" field="dimensionWorksets">
+				          <f:select />
+				        </f:entry>
+				         <f:entry title="Dimensions SMR" field="dimensionSMRs">
+				          <f:select />
+				        </f:entry>
+				        <f:entry title="Dimensions Version" field="dimensionsVersion">
+			    		  <f:textbox />
+			 			</f:entry>
+	               </table>
+	            </f:entry>
+	        </f:section>
+	        <f:section title="Release Options">
+	            <f:entry >
+	                <table width="100%">
+	                    <f:entry title="Project" field="projects">
+					      <f:select />
+					     </f:entry>
+						 <f:entry title="Release Targeted For Month" field="releaseMonth">
+				          <f:select />
+				        </f:entry>	
+	                </table>
+	            </f:entry>
+	        </f:section>
+	         <f:section title="Code Freeze">
+	            <f:entry >
+	                <table width="100%">
+	          			<f:entry title="Start Date" field="codeFreezeStartDate">
+					      <f:textbox default="DD/MM/YYYY" />
+					     </f:entry>
+						 <f:entry title="End Date" field="codeFreezeEndDate">
+				          <f:textbox default="DD/MM/YYYY" />
+				        </f:entry>	
+				        
+	                </table>
+	            </f:entry>
+	        </f:section>
+	    </f:section>
+	    <f:entry>
+          <div align="right">
+              <f:repeatableDeleteButton />
+          </div>
+       </f:entry>
+	  </table>
+     </f:repeatable>
+   </f:entry>   
+</j:jelly>
